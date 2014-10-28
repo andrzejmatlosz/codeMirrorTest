@@ -1,0 +1,94 @@
+booleanOpertaion "booleanOpertaion" 
+=
+    whitespace* subquery whitespace* booleanOperator whitespace+ booleanOpertaion whitespace*
+  / whitespace* subquery whitespace*
+  / whitespace* boolean whitespace+ booleanOperator whitespace+ booleanOpertaion whitespace*
+  / whitespace* "(" whitespace* booleanOpertaion whitespace* ")" whitespace+ booleanOperator whitespace+ booleanOpertaion whitespace*
+  / whitespace* boolean whitespace*
+  / whitespace* "(" whitespace* booleanOpertaion whitespace* ")" whitespace*
+
+subquery
+= 
+    "subquery{" [a-zA-Z0-9//. \t\r\n]+ "}"
+
+boolean 
+= 
+    negation whitespace+ booleanExpression
+  / negation whitespace* "(" whitespace* boolean whitespace* ")"
+  / booleanExpression
+
+negation
+=
+  [nN][oO][tT]
+
+booleanOperator
+=
+  [Aa][Nn][Dd]/[Oo][Rr]
+
+booleanExpression
+=
+    propertyOperation whitespace* conditionOperator whitespace* booleanExpression
+  / propertyOperation
+  / property
+
+conditionOperator
+=
+    "="
+  / "!="
+  / ">="
+  / ">"
+  / "<="
+  / "<"
+
+propertyOperation
+=
+    listManagerUrl
+  / inOperator
+  / "(" whitespace* propertyOperation whitespace* ")" whitespace* operatioSign whitespace* propertyOperation
+  / property whitespace* operatioSign whitespace* propertyOperation
+  / "(" whitespace* propertyOperation whitespace* ")"
+  / property
+
+inOperator
+=
+    property whitespace+ [iI][nN] whitespace* [(] whitespace* propertyAndComma+ property whitespace* [)]
+  / property whitespace+ [iI][nN] whitespace* [(] whitespace* listManagerUrl whitespace* [)]
+  / property whitespace+ [iI][nN] whitespace* [(] whitespace* property whitespace* [)]
+
+propertyAndComma
+=
+    property whitespace* "," whitespace*
+
+listManagerUrl
+=
+    "listManager:" property
+
+operatioSign
+=
+    "*"
+  / "+"
+  / "/"
+  / "-"
+
+property "property" 
+=
+    propFirst:[a-zA-Z]propRest:[a-zA-Z0-9]* dot:dot+ prop:property
+      { return propFirst + propRest.join("").toString() + dot + prop; }
+  / propFirst:[a-zA-Z]propRest:[a-zA-Z0-9]*
+      { return propFirst + propRest.join("").toString(); }
+  / static
+
+static
+=
+    "\""[a-zA-Z][a-zA-Z0-9]*"\""
+  / [0-9]+ dot [0-9]+
+  / [0-9]+
+
+dot 
+=
+  "."
+
+whitespace "whitespace"
+= 
+    [ \t\r\n]
+      { return 'whitespace'; }
