@@ -1,0 +1,60 @@
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="uxprototype.barclays.com" resolutions="1x" timestamp="1452865693695">
+  <folder name="css">
+    <file name="site_global.css" crc="4052507572"/>
+    <file name="widget-close.css" crc="3779871263" ref="widget-close"/>
+    <file name="index.css" crc="3785647868" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="196614522" ref="index:widget-close"/>
+    <file name="museutils.js" crc="275725342" ref="index:widget-close"/>
+    <file name="webpro.js" crc="3883484123" ref="index:widget-close"/>
+    <file name="musewpslideshow.js" crc="360574455" ref="index:widget-close"/>
+    <file name="jquery.museoverlay.js" crc="342093292" ref="index:widget-close"/>
+    <file name="touchswipe.js" crc="4218319045" ref="index:widget-close"/>
+    <file name="jquery.watch.js" crc="3999102769" ref="index:widget-close"/>
+  </folder>
+  <folder name="images">
+    <file name="pasted svg 133192x22.svg" crc="121612218" ref="index:widget-close"/>
+    <file name="pasted svg 133192x22_poster_.png" crc="4026077274" ref="index"/>
+    <file name="pasted svg 350x251.svg" crc="3828815221" ref="index:widget-close"/>
+    <file name="pasted svg 350x251_poster_.png" crc="3894509664" ref="index"/>
+    <file name="pasted svg 107213x22.svg" crc="4226541381" ref="index:widget-close"/>
+    <file name="pasted svg 107213x22_poster_.png" crc="125277966" ref="index"/>
+    <file name="main-bar.png" crc="373580842" ref="index:widget-close"/>
+    <file name="pannel-1.png" crc="4153340609" ref="index:widget-close"/>
+    <file name="states.png" crc="491750079" ref="index:widget-close"/>
+    <file name="pannel-2.png" crc="143161360" ref="index:widget-close"/>
+    <file name="stream-1.png" crc="4039438755" ref="index"/>
+    <file name="stream-pannel-1.png" crc="337562554" ref="index"/>
+    <file name="stream-2.png" crc="290888867" ref="index"/>
+    <file name="stream-pannel-2.png" crc="384034332" ref="index"/>
+    <file name="stream-3.png" crc="15347800" ref="index"/>
+    <file name="stream-pannel-3.png" crc="25304458" ref="index"/>
+    <file name="stream-4.png" crc="224572948" ref="index"/>
+    <file name="stream-pannel-4.png" crc="3809924489" ref="index"/>
+    <file name="stream-5.png" crc="523194692" ref="index"/>
+    <file name="stream-pannel-5.png" crc="3957269426" ref="index"/>
+    <file name="stream-6.png" crc="52698435" ref="index"/>
+    <file name="stream-pannel-6.png" crc="3775413782" ref="index"/>
+    <file name="stream-7.png" crc="366051687" ref="index"/>
+    <file name="stream-pannel-7.png" crc="171935096" ref="index"/>
+    <file name="stream--8.png" crc="4218958399" ref="index"/>
+    <file name="stream-pannel-8.png" crc="283064078" ref="index"/>
+    <file name="stream--9.png" crc="3846066722" ref="index"/>
+    <file name="stream-pannel-9.png" crc="4107744015" ref="index"/>
+    <file name="stream-10.png" crc="71103984" ref="index"/>
+    <file name="stream-pannel-10.png" crc="43172072" ref="index"/>
+    <file name="stream-11.png" crc="111267624" ref="index"/>
+    <file name="stream-pannel-11.png" crc="4265127854" ref="index"/>
+    <file name="container-open.png" crc="4039078460" seo="true" ref="index"/>
+    <file name="streams-chart.png" crc="3873098987" seo="true" ref="index"/>
+    <file name="title.png" crc="346321085" seo="true" ref="index:widget-close"/>
+    <file name="top-week.png" crc="3861671362" seo="true" ref="index"/>
+    <file name="devops-logo.png" crc="485874352" seo="true" ref="index:widget-close"/>
+    <file name="arrow-open.png" crc="126801491" seo="true" ref="index"/>
+    <file name="container-close.png" crc="508900533" seo="true" ref="widget-close"/>
+    <file name="arrow-close.png" crc="3972036457" seo="true" ref="widget-close"/>
+  </folder>
+  <file name="index.html" crc="4293996469" seo="true" mt="1452865499199" redirect="true"/>
+  <file name="widget-close.html" crc="238016083" seo="true" mt="1452865481201" redirect="true"/>
+</manifest>
